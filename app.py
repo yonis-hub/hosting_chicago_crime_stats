@@ -11,12 +11,13 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
 
+
 # Define the database connection parameters
 database_name = 'chicago_violent_crimes_db' # Created in Week 9, Night 1, Exercise 08-Stu_CRUD 
-connection_string = f'postgresql://{username}:{password}@localhost:5432/{database_name}'
+DATABASE_URL = f'postgresql://{username}:{password}@localhost:5432/{database_name}'
 
 # Connect to the database
-engine = create_engine(connection_string)
+engine = create_engine(DATABASE_URL)
 base = automap_base()
 base.prepare(engine, reflect=True)
 
