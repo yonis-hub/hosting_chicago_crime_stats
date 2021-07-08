@@ -28,7 +28,7 @@ violent_crimes = base.classes.violent_crimes
 app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False # so the json does not order the jsonified list
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0 # Effectively disables page caching
-app.config['SQLALCHEMY_DATABASE_URL'] = 'postgres://yfrckregxnfvaj:7092cd88068d126d7872fb529485914930a8d387cb840824e0d406f9d184f623@ec2-3-212-75-25.compute-1.amazonaws.com:5432/d4bbdqfrrmiu0v'
+
 
 # Here's where we define the various application routes ...
 @app.route("/")
