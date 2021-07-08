@@ -14,10 +14,10 @@ from sqlalchemy import create_engine
 
 # Define the database connection parameters
 database_name = 'chicago_violent_crimes_db' # Created in Week 9, Night 1, Exercise 08-Stu_CRUD 
-DATABASE_URL = f'postgresql://{username}:{password}@localhost:5432/{database_name}'
+connection_string = f'postgresql://{username}:{password}@localhost:5432/{database_name}'
 
 # Connect to the database
-engine = create_engine(DATABASE_URL)
+engine = create_engine(connection_string)
 base = automap_base()
 base.prepare(engine, reflect=True)
 
@@ -28,6 +28,7 @@ violent_crimes = base.classes.violent_crimes
 # This statement is required for Flask to do its job. 
 app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False # so the json does not order the jsonified list
+app.config['SQLALCHEMY_DATABASE_URL'] = 'postgresql://postgres:123456@localhost:5432/chicago_violent_crimes_db'
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0 # Effectively disables page caching
 
 
