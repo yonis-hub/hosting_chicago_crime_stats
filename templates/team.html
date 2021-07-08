@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Meet the Team</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  <!-- May need to update this piece! -->
+  <!-- <script src="../static/js/main.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+      <!-- jQuery Version 1.11.0 -->
+      <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/jquery-1.11.0.js"></script>
+
+      <!-- Bootstrap Core JavaScript -->
+      <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/bootstrap.min.js"></script>
+  
+      <!-- Plugin JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+      <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/classie.js"></script>
+      <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/cbpAnimatedHeader.js"></script>
+</head>
+
+    <!-- Navigation- this uses bootstrap -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+        <div class="container">
+            <!-- This is where the branding goes/and the hamburger menu is added for responsive design-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Chicago Crime Report</a>
+            </div>
+   
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">                      
+                     <!-- The Team-->
+                     <li class="">
+                        <a href="/MeetTheTeam"><span class="glyphicon glyphicon-user"></span> Meet the Team</a>
+                    </li> 
+                    <!-- Raw Data-->
+                    <li class="">
+                    <a href="/showDataPage"><span class="glyphicon glyphicon-tasks"></span> Raw Data</a>
+                    </li> 
+                    <!-- Dropdown for Viz-->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-signal"></span> Visualizations
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/crimeMap">Chicago Crime Map</a></li>
+                            <li><a href="/crimeCalendarPage">Crime Calendar</a></li>
+                            <li><a href="/arrestChartPage">Crimes vs. Arrests</a></li>
+                        </ul>
+                      </li>                                                       
+                </ul>
+            </div>            
+        </div>
+
+    </nav>
+
+   <!-- Team Section -->
+    <section id="team" class="bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Amazing Team</h2>
+                    <h3 class="section-subheading text-muted">Together we make up Group 7 from the Monday/Wednesday class period.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="team-member">
+                        <img src="/static/images/nick.jpeg" class="img-responsive img-circle" alt="">
+                        <h4>Nick Hoyer</h4>
+                        <p class="text-muted">ETL/Crimes vs. Arrests </p>
+                        <h3><a class='btn btn-link' href='https://www.linkedin.com/in/nicolas-hoyer-889460b5/'>View Nick's LinkedIn</a></h3>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="team-member">
+                        <img src="/static/images/yonis.jpeg" class="img-responsive img-circle" alt="">
+                        <h4>Yonis Hassan</h4>
+                        <p class="text-muted">Flask Operations/Crime Map</p>
+                        <h3><a class='btn btn-link' href="https://www.linkedin.com/in/yonis-hassan-6312a1a5/">View Yonis' LinkedIn</a></h3>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="team-member">
+                        <img src="/static/images/laura.jpeg" class="img-responsive img-circle" alt="">
+                        <h4>Laura Hertzog</h4>
+                        <p class="text-muted">Crime Calendar</p>
+                        <h3><a class='btn btn-link' href="https://www.linkedin.com/in/laura-hertzog/">View Laura's LinkedIn</a></h3><br />
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="team-member">
+                        <img src="/static/images/eric.jpeg" class="img-responsive img-circle" alt="">
+                        <h4>Eric Shaffer</h4>
+                        <p class="text-muted">ETL/Raw Data</p>
+                        <h3><a class='btn btn-link' href="https://www.linkedin.com/in/eric-shaffer22/">View Eric's LinkedIn</a></h3>
+                    </div>
+                </div> 
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="team-member">
+                        <img src="/static/images/alex.jpeg" class="img-responsive img-circle" alt="">
+                        <h4>Alex Zapuchlak</h4>
+                        <p class="text-muted">HTML/CSS/JS</p>
+                        <h3><a class='btn btn-link' href="https://www.linkedin.com/azapuchlak">View Alex's LinkedIn</a></h3>
+                    </div>
+                </div>                                          
+            </div>
+        </div>
+    </section>
+
+    <!--footer section-->
+    <footer>
+        <div class="footer">Copyright &copy; Chicago Crime Report 2021</div>
+      </footer>

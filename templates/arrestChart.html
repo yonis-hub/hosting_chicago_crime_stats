@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chicago Crime: Arrest Chart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+      <!-- jQuery Version 1.11.0
+      <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/jquery-1.11.0.js"></script>
+
+      <!-- Bootstrap Core JavaScript -->
+      <!-- <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/bootstrap.min.js"></script> -->
+  
+      <!-- Plugin JavaScript -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> -->
+      <!-- <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/classie.js"></script> -->
+      <!-- <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/cbpAnimatedHeader.js"></script> --> -->
+</head>
+
+        <!-- Navigation- this uses bootstrap -->
+        <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+          <div class="container">
+              <!-- This is where the branding goes/and the hamburger menu is added for responsive design-->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="/">Chicago Crime Report</a>
+              </div>
+     
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">                      
+                       <!-- The Team-->
+                       <li class="">
+                          <a href="/MeetTheTeam"><span class="glyphicon glyphicon-user"></span> Meet the Team</a>
+                      </li> 
+                      <!-- Raw Data-->
+                      <li class="">
+                      <a href="/showDataPage"><span class="glyphicon glyphicon-tasks"></span> Raw Data</a>
+                      </li> 
+                      <!-- Dropdown for Viz-->
+                      <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-signal"></span> Visualizations
+                          <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                              <li><a href="/crimeMap">Chicago Crime Map</a></li>
+                              <li><a href="/crimeCalendarPage">Crime Calendar</a></li>
+                              <li><a href="/arrestChartPage">Crimes vs. Arrests</a></li>
+                          </ul>
+                        </li>                                                       
+                  </ul>
+              </div>            
+          </div>
+    
+      </nav>
+<body>
+   <!-- PLACEHOLDER FOR YOUR VISUALIZATION CODE -->
+   <div class="container">
+    <div class="row" style="padding-top: 75px;">
+      <div class="col-sm-12 border">
+        <h3>Crimes vs. Arrests</h3>
+        <hr>
+          <div class="row">
+            <div class="col-md-12">
+              <div id="arrestChart"></div>
+            </div>
+          </div>
+        <p style="font-size:24px;">The visual above shows the breakdown of crimes reported in Chicago and whether or not the incident resulted in an arrest. 12% of all violent crimes resulted in an arrest. Homicide crimes had the highest percentage of arrests made while making up the smallest percentage of overall crime.
+        </p>
+      </div>
+    </div>
+  </div>
+
+   <!-- YOUR CODE ENDS HERE -->
+  <script type="text/javascript" src="/static/js/arrestChart.js"></script>
+
+</body>
+    <!--footer section-->
+<footer>
+  <div class="footer">Copyright &copy; Chicago Crime Report 2021</div>
+</footer>

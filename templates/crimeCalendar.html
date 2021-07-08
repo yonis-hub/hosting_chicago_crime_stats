@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chicago Crime: Crime Calendar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
+</head>
+
+        <!-- Navigation- this uses bootstrap -->
+        <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+          <div class="container">
+              <!-- This is where the branding goes/and the hamburger menu is added for responsive design-->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="/">Chicago Crime Report</a>
+              </div>
+     
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">                      
+                       <!-- The Team-->
+                       <li class="">
+                          <a href="/MeetTheTeam"><span class="glyphicon glyphicon-user"></span> Meet the Team</a>
+                      </li> 
+                      <!-- Raw Data-->
+                      <li class="">
+                      <a href="/showDataPage"><span class="glyphicon glyphicon-tasks"></span> Raw Data</a>
+                      </li> 
+                      <!-- Dropdown for Viz-->
+                      <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-signal"></span> Visualizations
+                          <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                              <li><a href="/crimeMap">Chicago Crime Map</a></li>
+                              <li><a href="/crimeCalendarPage">Crime Calendar</a></li>
+                              <li><a href="/arrestChartPage">Crimes vs. Arrests</a></li>
+                          </ul>
+                        </li>                                                       
+                  </ul>
+              </div>            
+          </div>
+    
+      </nav>
+<body>
+   <!-- PLACEHOLDER FOR YOUR VISUALIZATION CODE -->
+   <div class="container">
+    <div class="row" style="padding-top: 75px;">
+      <div class="col-sm-12 border">
+        <h3>Crime Calendar</h3>
+          <div id = "line">
+            
+          </div>
+        <hr>
+          <div> 
+
+          <!-- !!!YOUR CODE GOES HERE!!! -->
+
+          </div>
+        <p style="font-size:24px;">Above is a graph depicting how many violent crimes occur per day in Chicago. 
+          Using this graph you can compare and contrast when crimes are occurring and what type of crime. 
+          Thus far in 2021, Battery is the most common violent crime in Chicago.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- import Plotly-->
+  <script src = "https:/cdn.plot.ly/plotly-latest.min.js"></script>
+
+   <!-- YOUR CODE ENDS HERE -->
+   <script type="text/javascript" src="/static/js/crimeCalendar.js"></script>
+
+</body>
+    <!--footer section-->
+<footer>
+  <div class="footer">Copyright &copy; Chicago Crime Report 2021</div>
+</footer>
